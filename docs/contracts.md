@@ -21,7 +21,7 @@ name | string | название для отображения пользова�
 Имя | Тип | Описание
 --- | --- | ---
 amount | float | количество денег
-currency | [Currency](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#currency) | валюта
+currency | [Currency](./contracts.md#currency) | валюта
 
 ```json
 {
@@ -61,8 +61,8 @@ region | object | регион (справочник регионов)
 degree | object | учёная степень (справочник учёных степеней)
 position | object | должность (справочник должностей)
 specialties | array | специальности (справочник медицинских специальностей)
-consultationTypes | array<[ConsultationType](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#consultation-type)> | доступные виды консультаций (объект вид консультации)
-summary | [DoctorStatistics](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#doctor-Statistics) | статистическая информация (объект статистика врача)
+consultationTypes | array<[ConsultationType](./contracts.md#consultation-type)> | доступные виды консультаций (объект вид консультации)
+summary | [DoctorStatistics](./contracts.md#doctor-statistics) | статистическая информация (объект статистика врача)
 
 ```json
 {
@@ -111,8 +111,8 @@ summary | [DoctorStatistics](https://github.com/doktornarabote/telemedicine-part
 --- | --- | ---
 id | string | уникальный идентификатор
 type | object | тип консультации
-cost | [Money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | стоимость (объект денежные средства)
-timeSchedules | array<[TimeSchedule](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#TimeSchedule)> | график доступности
+cost | [Money](./contracts.md#money) | стоимость (объект денежные средства)
+timeSchedules | array<[TimeSchedule](./contracts.md#timeschedule)> | график доступности
 isAvailable | boolean | признак доступности консультации
 isDisabled | boolean | признак запрета на проведение консультации
 
@@ -187,6 +187,54 @@ feedbackCount | integer | кол-во отзывов
 }
 ```
 
+## Consultation Request
+
+Имя | Тип | Описание
+--- | --- | ---
+id | string | уникальный идентификатор
+type | object | тип консультации
+status | object | статус
+createdAtUtc | string | дата создания
+medicalReport | [MedicalReport](./contracts.md#medical-report) | заключение врача
+feedbacks | array<[Feedback](./contracts.md#feedback)> | список отзывов
+statuses | array<[StatusHistory](./contracts.md#status-history)> | история статусов консультации
+doctor | [Doctor](./contracts.md#doctor) | врач, с которым проводится консультация
+operations | array<[Operation](./contracts.md#operation)> | список проведённых операций
+timeline | array<[TimelineEvent](./contracts.md#timeline-event)> | список возникавших событий
+
+```json
+{
+    "id": "92606f49-9185-407e-b844-7734f0ffb170",
+    "type": {
+        "id": "Callback",
+        "name": "Обратный звонок"
+    },
+    "status": {
+        "id": "Processed",
+        "name": "Завершено"
+    },
+    "createdAtUtc": "2016-12-12T14:10:12",
+    "medicalReport": {
+        //..
+    },
+    "feedbacks": [
+        //..
+    ],
+    "statuses": [
+        //..
+    ],
+    "doctor": {
+        //..
+    },
+    "operations": [
+        //..
+    ],
+    "timeline": [
+        //..
+    ]
+}
+```
+
 ## Callback
 
 Имя | Тип | Описание
@@ -194,16 +242,16 @@ feedbackCount | integer | кол-во отзывов
 id | string | уникальный идентификатор
 status | object | статус
 createdAtUtc | string | дата создания
-medicalReport | [MedicalReport](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#medical-report) | заключение врача
-feedbacks | array<[Feedback](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#feedback)> | список отзывов
-statuses | array<[StatusHistory](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#status-history)> | история статусов консультации
-doctor | [Doctor](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#doctor) | врач, с которым проводится консультация
-operations | array<[Operation](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#operation)> | список проведённых операций
-timeline | array<[TimelineEvent](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#timeline-event)> | список возникавших событий
-patientPhone | [Phone](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#phone) | телефон, на который поступит звонок для консультации
+medicalReport | [MedicalReport](./contracts.md#medical-report) | заключение врача
+feedbacks | array<[Feedback](./contracts.md#feedback)> | список отзывов
+statuses | array<[StatusHistory](./contracts.md#status-history)> | история статусов консультации
+doctor | [Doctor](./contracts.md#doctor) | врач, с которым проводится консультация
+operations | array<[Operation](./contracts.md#operation)> | список проведённых операций
+timeline | array<[TimelineEvent](./contracts.md#timeline-event)> | список возникавших событий
+patientPhone | [Phone](./contracts.md#phone) | телефон, на который поступит звонок для консультации
 patientFullName | string | фио пациента
-costPerMinute | [Money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | стоимость
-calls | array<[Call](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#call)> | список осуществлённых звонков
+costPerMinute | [Money](./contracts.md#money) | стоимость
+calls | array<[Call](./contracts.md#call)> | список осуществлённых звонков
 
 ```json
 {
@@ -251,14 +299,14 @@ calls | array<[Call](https://github.com/doktornarabote/telemedicine-partner-api/
 id | string | уникальный идентификатор
 status | object | статус
 createdAtUtc | string | дата создания
-medicalReport | [MedicalReport](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#medical-report) | заключение врача
-feedbacks | array<[Feedback](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#feedback)> | список отзывов
-statuses | array<[StatusHistory](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#status-history)> | история статусов консультации
-doctor | [Doctor](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#doctor) | врач, с которым проводится консультация
-operations | array<[Operation](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#operation)> | список проведённых операций
-timeline | array<[TimelineEvent](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#timeline-event)> | список возникавших событий
-costPerRequest | [Money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | стоимость за консультацию
-correspondence | [Correspondence](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#переписка) | информация о сообщениях
+medicalReport | [MedicalReport](./contracts.md#medical-report) | заключение врача
+feedbacks | array<[Feedback](./contracts.md#feedback)> | список отзывов
+statuses | array<[StatusHistory](./contracts.md#status-history)> | история статусов консультации
+doctor | [Doctor](./contracts.md#doctor) | врач, с которым проводится консультация
+operations | array<[Operation](./contracts.md#operation)> | список проведённых операций
+timeline | array<[TimelineEvent](./contracts.md#timeline-event)> | список возникавших событий
+costPerRequest | [Money](./contracts.md#money) | стоимость за консультацию
+correspondence | [Correspondence](./contracts.md#correspondence) | информация о сообщениях
 
 ```json
 {
@@ -302,17 +350,17 @@ correspondence | [Correspondence](https://github.com/doktornarabote/telemedicine
 id | string | уникальный идентификатор
 status | object | статус
 createdAtUtc | string | дата создания
-medicalReport | [MedicalReport](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#medical-report) | заключение врача
-feedbacks | array<[Feedback](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#feedback)> | список отзывов
-statuses | array<[StatusHistory](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#status-history)> | история статусов консультации
-doctor | [Doctor](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#doctor) | врач, с которым проводится консультация
-operations | array<[Operation](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#operation)> | список проведённых операций
-timeline | array<[TimelineEvent](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#timeline-event)> | список возникавших событий
-patientPhone | [Phone](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#phone) | телефон, на который поступит звонок для консультации
+medicalReport | [MedicalReport](./contracts.md#medical-report) | заключение врача
+feedbacks | array<[Feedback](./contracts.md#feedback)> | список отзывов
+statuses | array<[StatusHistory](./contracts.md#status-history)> | история статусов консультации
+doctor | [Doctor](./contracts.md#doctor) | врач, с которым проводится консультация
+operations | array<[Operation](./contracts.md#operation)> | список проведённых операций
+timeline | array<[TimelineEvent](./contracts.md#timeline-event)> | список возникавших событий
+patientPhone | [Phone](./contracts.md#phone) | телефон, на который поступит звонок для консультации
 videoSupport | boolean | поддержка видео-связи
 patientFullName | string | фио пациента
-costPerMinute | [Money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | стоимость
-calls | array<[Call](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#call)> | список осуществлённых звонков
+costPerMinute | [Money](./contracts.md#money) | стоимость
+calls | array<[Call](./contracts.md#call)> | список осуществлённых звонков
 
 ```json
 {
@@ -357,7 +405,7 @@ calls | array<[Call](https://github.com/doktornarabote/telemedicine-partner-api/
 --- | --- | ---
 unreadCount | integer | кол-во непрочитанных сообщений
 totalCount | integer | кол-во всего сообщений
-message | [Message](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#message) | последнее сообщение
+message | [Message](./contracts.md#message) | последнее сообщение
 
 ```json
 {
@@ -464,10 +512,10 @@ patronimycName | string | отчество
 bornOn | string | дата рождения
 weight | number | вес
 sex | object | пол
-photo | [Media](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#media) | фотография
+photo | [Media](./contracts.md#media) | фотография
 avatarUrl | string | адрес фото профиля
-phone | [Phone](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#phone) | телефон пользователя
-balance | object | баланс пользователя, состоит из пары rub, bonus типа [Money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money)
+phone | [Phone](./contracts.md#phone) | телефон пользователя
+balance | object | баланс пользователя, состоит из пары rub, bonus типа [Money](./contracts.md#money)
 createdAtUtc | datetime | дата создания профиля
 isDeleted | boolean | индикатор удаления профиля
 
@@ -516,8 +564,8 @@ medicalReports | array | массив заключений (объектов м�
 --- | --- | ---
 text | string | текст заключения
 createdAtUtc | datetime | дата создания
-consultation | [ConsultationDescription](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#consultation-description) | краткое описание консультации
-attachments | array<[Media](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#media)> | дата начала
+consultation | [ConsultationDescription](./contracts.md#consultation-description) | краткое описание консультации
+attachments | array<[Media](./contracts.md#media)> | дата начала
 
 ```json
 {
@@ -570,18 +618,18 @@ createdAtUtc | string | дата создания
 
 Имя | Тип | Описание
 --- | --- | ---
-amount | [Money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | сумма
+amount | [Money](./contracts.md#money) | сумма
 createdAtUtc | string | дата создания
 completedAtUtc | string | дата завершения
 correspondentAccountId | string | идентификатор корреспондентского счёта
-operation | [Operation](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#operation) | операция, в рамках которой проводилась транзакция
+operation | [Operation](./contracts.md#operation) | операция, в рамках которой проводилась транзакция
 
 ## Operation
 
 Имя | Тип | Описание
 --- | --- | ---
 id | string | уникальный идентификатор
-type | [OperationType](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#operationtype) | тип операции
+type | [OperationType](./contracts.md#operationtype) | тип операции
 description | string | описание
 createdAtUtc | string | дата создания
 completedAtUtc | string | дата завершения

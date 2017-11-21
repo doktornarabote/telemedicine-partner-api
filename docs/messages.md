@@ -17,7 +17,7 @@ offset | integer | смещение (сколько записей пропус�
 
 ### Ответ:
 
-[Сообщение](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#message)
+[Объект Сообщение](./contracts.md#message)
 
 ```json
 {
@@ -45,7 +45,7 @@ offset | integer | смещение (сколько записей пропус�
 
 ### Ответ:
 
-[Сообщение](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#message)
+[Объект Сообщение](./contracts.md#message)
 
 ```json
 {
@@ -73,7 +73,7 @@ attachmentId | string | уникальный идентификатор меди
 
 ### Ответ:
 
-[Сообщение](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#message)
+[Объект Сообщение](./contracts.md#message)
 
 ```json
 {

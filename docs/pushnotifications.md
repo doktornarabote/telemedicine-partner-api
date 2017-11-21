@@ -11,7 +11,7 @@
 Имя | Тип | Описание
 --- | --- | ---
 pushToken | string | Token устройства, выданный Push-сервисом производителя
-subscription | [PushSubscription](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#PushSubscription) | объект подписки устройства с помощью VAPID-ключей
+subscription | [PushSubscription](./contracts.md#pushsubscription) | объект подписки устройства с помощью VAPID-ключей
 applicationId | string | ID приложения Телемедицины (отдельные ключи для iOS, Android, Chrome, Firefox, etc.)
 
 ### Ответ:
@@ -33,7 +33,7 @@ applicationId | string | ID приложения Телемедицины (от�
 Имя | Тип | Описание
 --- | --- | ---
 pushToken | string | Token устройства, выданный Push-сервисом производителя
-subscription | [PushSubscription](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#PushSubscription) | объект подписки устройства с помощью VAPID-ключей
+subscription | [PushSubscription](./contracts.md#pushsubscription) | объект подписки устройства с помощью VAPID-ключей
 applicationId | string | ID приложения Телемедицины (отдельные ключи для iOS, Android, Chrome, Firefox, etc.)
 
 ### Ответ

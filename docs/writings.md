@@ -11,12 +11,12 @@
 doctorId | integer | уникальный идентификатор врача
 message | string | текстовое сообщение для врача (обращение/описание проблемы)
 patientFullName | string | фио пациента
-cost | [Money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | стоимость выбранной консультации. Необходимо для сверения последних данных о стоимости консультаций от врача со стоимостью, показанной пациенту.
+cost | [Money](./contracts.md#money) | стоимость выбранной консультации. Необходимо для сверения последних данных о стоимости консультаций от врача со стоимостью, показанной пациенту.
 beginAtUtc | datetime | (optional) время начала консультации. Если параметр не указан, то консультация начнется сразу.
 
 ### Ответ:
 
-[Текстовая консультация](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Writing)
+[Объект Текстовая консультация](./contracts.md#writing)
 
 ```json
 {
@@ -38,7 +38,7 @@ id | string | уникальный идентификатор консульта
 
 ### Ответ
 
-[Текстовая консультация](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Writing)
+[Объект Текстовая консультация](./contracts.md#writing)
 
 ```json
 {
@@ -65,7 +65,7 @@ offset | integer | смещение (сколько записей пропус�
 
 ### Ответ
 
-[Текстовая консультация](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Writing)
+[Объект Текстовая консультация](./contracts.md#writing)
 
 ```json
 {
@@ -110,7 +110,7 @@ reason | string | причина
 
 ### Ответ:
 
-[Текстовая консультация](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Writing)
+[Объект Текстовая консультация](./contracts.md#writing)
 
 ```json
 {
@@ -133,7 +133,7 @@ reason | string | причина
 
 ### Ответ:
 
-[Текстовая консультация](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Writing)
+[Объект Текстовая консультация](./contracts.md#writing)
 
 ```json
 {
@@ -157,7 +157,7 @@ comment | string | комментарий к оценке
 
 ### Ответ
 
-[Текстовая консультация](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Writing)
+[Текстовая консультация](./contracts.md#writing)
 
 ```json
 {

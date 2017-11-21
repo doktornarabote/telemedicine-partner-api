@@ -16,6 +16,8 @@ offset | integer | смещение (сколько записей пропус�
 
 ### Ответ
 
+[Объект Запрос на консультацию](./contracts.md#consultation-request)
+
 ```json
 {
   "items": [
@@ -60,7 +62,7 @@ id | string | уникальный идентификатор консульта
 
 ### Ответ
 
-[Медицинское заключение](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#medical-report)
+[Объект Медицинское заключение](./contracts.md#medical-report)
 
 ```json
 {
@@ -83,7 +85,7 @@ requestId | string | ID запроса на консультацию
 
 ### Ответ
 
-[Вложение](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#media)
+[Объект Вложение](./contracts.md#media)
 
 ```json
 {

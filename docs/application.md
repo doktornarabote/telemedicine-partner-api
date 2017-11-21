@@ -6,7 +6,10 @@
 
 ### Запрос:
 
-Параметры: отсутствуют.
+Имя | Тип | Описание
+--- | --- | ---
+operatingSystemName | string | название ОС (ios, android, etc.)
+applicationVersion | string | версия приложения
 
 ### Ответ:
 

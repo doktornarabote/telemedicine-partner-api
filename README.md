@@ -6,84 +6,80 @@ Telemedicine Partner API — это [API](https://ru.wikipedia.org/wiki/API) д�
 
 ### Общая информация
 
-* [Общая информация](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/general.md)
-* [Авторизация](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/authorization.md)
-* [Ошибки и коды ответов](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/errors.md)
-* [Контракты](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md)
+* [Общая информация](./docs/general.md)
+* [Авторизация](./docs/authorization.md)
+* [Ошибки и коды ответов](./docs/errors.md)
+* [Контракты](./docs/contracts.md)
 
 ### Врачи
 
-* [Поиск по врачам](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/doctors.md)
-* [Получение информации о враче](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/doctors.md)
+* [Поиск по врачам](./docs/doctors.md#Поиск-по-врачам)
+* [Получение информации о враче](./docs/doctors.md#Получение-информации-о-враче)
 
 ### Консультации с врачом
 
-* [Запросы на консультации](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/requests.md)
-  * [Поиск по консультациям](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/requests.md)
-  * [Медицинские заключения](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/requests.md)
-  * [Загрузка и прикрепление документа к запросам на консультации](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/requests.md)
-* [Обратный звонок](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/callbacks.md)
-  * [Запуск консультации](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/callbacks.md)
-  * [Получение информации о консультации](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/callbacks.md)
-  * [Поиск по консультациями](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/callbacks.md)
-  * [Прерывание консультации](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/callbacks.md)
-* [Текстовая консультация](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/writings.md)
-  * [Запрос на консультацию](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/writings.md)
-  * [Получение информации о консультации](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/writings.md)
-  * [Поиск по консультациям](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/writings.md)
-  * [Проверка наличия непрочитанных врачом сообщений](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/writings.md)
-  * [Отмена запроса на консультацию](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/writings.md)
-  * [Прерывание консультации](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/writings.md)
-* [Интернет-звонок](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/voip.md)
-  * [Запрос на консультацию](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/voip.md)
-  * [Получение информации о консультации](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/voip.md)
-  * [Поиск по консультациям](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/voip.md)
-  * [Отмена запроса / Прерывание консультации](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/voip.md)
-  * [Получение оставшегося времени до окончания ожидания врача](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/voip.md)
+* [Запросы на консультации](./docs/requests.md)
+  * [Поиск по консультациям](./docs/requests.md#Поиск-по-консультациям)
+  * [Статус запроса на консультацию](./docs/requests.md#Статус-запроса-на-консультацию)
+  * [Медицинские заключения](./docs/requests.md#Медицинские-заключения)
+  * [Загрузка и прикрепление документа к запросам на консультации](./docs/requests.md#Загрузка-и-прикрепление-документа-к-запросам-на-консультации)
+* [Обратный звонок](./docs/callbacks.md)
+  * [Запуск консультации](./docs/callbacks.md#Запуск-консультации)
+  * [Получение информации о консультации](./docs/callbacks.md#Получение-информации-о-консультации)
+  * [Поиск по консультациями](./docs/callbacks.md#Поиск-по-консультациям)
+  * [Прерывание консультации](./docs/callbacks.md#Прерывание-консультации)
+  * [Добавление отзыва об обратном звонке](./docs/writings.md#Добавление-отзыва-об-обратном-звонке)
+* [Текстовая консультация](./docs/writings.md)
+  * [Запрос на консультацию](./docs/writings.md#Запрос-на-консультацию)
+  * [Получение информации о консультации](./docs/writings.md#Получение-информации-о-консультации)
+  * [Поиск по консультациям](./docs/writings.md#Поиск-по-консультациям)
+  * [Проверка наличия непрочитанных врачом сообщений](./docs/writings.md#Проверка-наличия-непрочитанных-врачом-сообщений)
+  * [Отмена запроса на консультацию](./docs/writings.md#Отмена-запроса-на-консультацию)
+  * [Прерывание консультации](./docs/writings.md#Прерывание-консультации)
+  * [Добавление отзыва о текстовой консультации](./docs/writings.md#Добавление-отзыва-о-текстовой-консультации)
+* [Интернет-звонок](./docs/voip.md)
+  * [Запрос на консультацию](./docs/voip.md#Запрос-на-консультацию)
+  * [Получение информации о консультации](./docs/voip.md#Получение-информации-о-консультации)
+  * [Поиск по консультациям](./docs/voip.md#Поиск-по-консультациям)
+  * [Отмена запроса / Прерывание консультации](./docs/voip.md#Отмена-запроса--Прерывание-консультации)
+  * [Получение оставшегося времени до окончания ожидания врача](./docs/voip.md#Добавление-отзыва-о-консультации-Интернет-звонок)
 
 ### Текстовые сообщения
 
-* [Добавление сообщения](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/messages.md)
-* [Получение списка сообщений](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/messages.md)
-* [Получение списка непрочитанных сообщений](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/messages.md)
-* [Пометить сообщения как прочитанные](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/messages.md)
+* [Получение списка сообщений](./docs/messages.md#Получение-списка-сообщений)
+* [Получение списка непрочитанных сообщений](./docs/messages.md#Получение-списка-непрочитанных-сообщений)
+* [Добавление сообщения](./docs/messages.md#Добавление-сообщения)
+* [Пометить сообщения как прочитанные](./docs/messages.md#Пометить-сообщения-как-прочитанные)
 
 ### Медиа (Файлы)
 
-* [Добавление медиа](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/medias.md)
-* [Получение информации о медиа](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/medias.md)
-
-### Партнёр
-
-* [Получение информации о партнёре](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/partner.md)
+* [Добавление медиа](./docs/medias.md#Добавление-медиа)
+* [Получение информации о медиа](./docs/medias.md#Получение-загруженных-пациентом-документов)
 
 ### Профиль пациента
 
-* [Получение информации о профиле пациента](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/profile.md)
+* [Получение информации о профиле пациента](./docs/profile.md#Получение-информации-о-профиле)
+* [Обновление информации о профиле](./docs/profile.md#Обновление-информации-о-профиле)
 
 ### Медицинская карта
 
-* [Выдача доступа врачу к медицинской карте](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/medicalcard.md)
-
-### Корреспондентские счета
-
-* [Получение информация о счёте](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/correspondentaccounts.md)
+* [Выдача доступа врачу к медицинской карте](./docs/medicalcard.md#Выдача-доступа-врачу-к-медицинской-карте)
 
 ### Операции
 
-* [Поиск по операциям](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/operations.md)
+* [Поиск по операциям](./docs/operations.md#Поиск-операций)
 
 ### Push-уведомления
 
-* [Подписка](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/pushnotifications.md)
-* [Отписка](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/pushnotifications.md)
+* [Подписка](./docs/pushnotifications.md#Подписка)
+* [Отписка](./docs/pushnotifications.md#Отписка)
 
 ### Справочники
 
-* [Регионы](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/regions.md)
-* [Медицинские специальности](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/medicalspecialties.md)
-* [Учёные степени](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/degrees.md)
-* [Должности](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/medicalpositions.md)
+* [Регионы](./docs/regions.md)
+* [Медицинские специальности](./docs/medicalspecialties.md)
+* [Учёные степени](./docs/degrees.md)
+* [Должности](./docs/medicalpositions.md)
 
 ## Поддержка, обратная связь, новости
 
