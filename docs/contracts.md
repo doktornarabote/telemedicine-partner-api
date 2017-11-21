@@ -1,5 +1,71 @@
 # Контракты
 
+## OperationType
+
+Возможные значения: `Deposit`, `Withdraw`, `EUR`, `Bonus`.
+
+Имя | Тип | Описание
+--- | --- | ---
+id | string | идентификатор внутри системы
+name | string | название для отображения пользователю
+
+```json
+{
+    "id": "Deposit",
+    "name": "Пополнение счёта"
+}
+```
+
+## Currency
+
+Возможные значения id: `RUB`, `USD`, `EUR`, `Bonus`.
+
+Имя | Тип | Описание
+--- | --- | ---
+id | string | идентификатор внутри системы
+name | string | название для отображения пользователю
+
+```json
+{
+    "id": "RUB",
+    "name": "руб."
+}
+```
+
+## Money
+
+Имя | Тип | Описание
+--- | --- | ---
+amount | float | количество денег
+currency | [Currency](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md) | валюта
+
+```json
+{
+    "amount": 350.58,
+    "currency": {
+        "id": "RUB",
+        "name": "руб."
+    }
+}
+```
+
+## PushSubscription
+
+Имя | Тип | Описание
+--- | --- | ---
+endpoint | string | адрес подписки на push-сервере
+keys | object | VAPID-ключи
+
+```json
+{
+    "endpoint": "https://...",
+    "keys": {
+        "p256dh": "p256dh_key",
+        "auth": "auth_key"
+    }
+}
+```
+
 ## Врач
 
 Имя | Тип | Описание

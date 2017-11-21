@@ -1,4 +1,4 @@
-# Telemedicine API
+# Telemedicine Partner API
 
 Telemedicine Partner API — это [API](https://ru.wikipedia.org/wiki/API) для работы телемедицинских приложений "Телемедицина" для пациентов с врачами профессиональной социальной сети [Доктор на работе](https://www.doktornarabote.ru/AboutUs).
 
@@ -45,6 +45,7 @@ Telemedicine Partner API — это [API](https://ru.wikipedia.org/wiki/API) д�
 
 * [Добавление сообщения](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/messages.md)
 * [Получение списка сообщений](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/messages.md)
+* [Получение списка непрочитанных сообщений](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/messages.md)
 * [Пометить сообщения как прочитанные](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/messages.md)
 
 ### Медиа (Файлы)

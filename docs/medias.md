@@ -14,7 +14,9 @@ binary | string | multipart/form-data содержимое
 
 ```json
 {
-  //.. объект медиа
+  "item": {
+    //.. объект медиа
+  }
 }
 ```
 
