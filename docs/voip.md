@@ -11,10 +11,12 @@
 doctorId | integer | уникальный идентификатор врача
 patientFullName | string | фио пациента
 videoSupport | boolean | поддержка видео во время консультации
-cost | [money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | стоимость выбранной консультации. Необходимо для сверения последних данных о стоимости консультаций от врача со стоимостью, показанной пациенту.
+cost | [Money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | стоимость выбранной консультации. Необходимо для сверения последних данных о стоимости консультаций от врача со стоимостью, показанной пациенту.
 beginAtUtc | datetime | (optional) время начала консультации. Если параметр не указан, то консультация начнется сразу.
 
 ### Ответ:
+
+[Интернет-звонок](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Voip)
 
 ```json
 {
@@ -35,6 +37,8 @@ beginAtUtc | datetime | (optional) время начала консультац�
 id | string | уникальный идентификатор консультации вида интернет-звонок
 
 ### Ответ
+
+[Интернет-звонок](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Voip)
 
 ```json
 {
@@ -58,6 +62,8 @@ offset | integer | смещение (сколько записей пропус�
 videoSupport | boolean | явное указание типа интернет-консультаций
 
 ### Ответ
+
+[Интернет-звонок](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Voip)
 
 ```json
 {
@@ -106,6 +112,8 @@ rate | float | оценка консультации; допустимые зн�
 comment | string | комментарий к оценке
 
 ### Ответ
+
+[Интернет-звонок](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Voip)
 
 ```json
 {

@@ -29,6 +29,8 @@ offset | integer | смещение (сколько записей пропус�
 
 ### Ответ:
 
+[Врач](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Doctor)
+
 ```json
 {
   "items": [
@@ -54,6 +56,8 @@ offset | integer | смещение (сколько записей пропус�
 id | integer | уникальный идентификатор врача
 
 ### Ответ:
+
+[Врач](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Doctor)
 
 ```json
 {

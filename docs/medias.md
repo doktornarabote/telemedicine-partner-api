@@ -12,6 +12,8 @@ binary | string | multipart/form-data содержимое
 
 ### Ответ:
 
+[Медиа](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Media)
+
 ```json
 {
   "item": {
@@ -47,6 +49,8 @@ offset | integer | смещение (сколько записей пропус�
 asc | boolean | сортировать по возрастанию по дате добавления
 
 ### Ответ
+
+[Медиа](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Media)
 
 ```json
 {

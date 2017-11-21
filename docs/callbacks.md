@@ -9,14 +9,14 @@
 Имя | Тип | Описание
 --- | --- | ---
 doctorId | integer | уникальный идентификатор врача
-patientPhone | [phone](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#phone) | телефонный номер пациента.
+patientPhone | [Phone](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#phone) | телефонный номер пациента.
 patientFullName | string | фио пациента
-cost | [money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | стоимость выбранной консультации. Необходимо для сверения последних данных о стоимости консультаций от врача со стоимостью, показанной пациенту.
+cost | [Money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | стоимость выбранной консультации. Необходимо для сверения последних данных о стоимости консультаций от врача со стоимостью, показанной пациенту.
 beginAtUtc | datetime | (optional) время начала консультации. Если параметр не указан, то консультация начнется сразу.
 
 ### Ответ:
 
-[Обратный звонок](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Обратный-звонок)
+[Обратный звонок](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Callback)
 
 ```json
 {
@@ -38,7 +38,7 @@ id | string | уникальный идентификатор консульта
 
 ### Ответ
 
-[Обратный звонок](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Обратный-звонок)
+[Обратный звонок](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Callback)
 
 ```json
 {
@@ -65,7 +65,7 @@ offset | integer | смещение (сколько записей пропус�
 
 ### Ответ
 
-[Обратный звонок](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Обратный-звонок)
+[Обратный звонок](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Callback)
 
 ```json
 {

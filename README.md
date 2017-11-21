@@ -63,9 +63,7 @@ Telemedicine Partner API — это [API](https://ru.wikipedia.org/wiki/API) д�
 
 ### Медицинская карта
 
-* [Получение информации о медицинской карте пациента](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/medicalcard.md)
 * [Выдача доступа врачу к медицинской карте](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/medicalcard.md)
-* [Получение загруженных пациентом документов](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/medicalcard.md)
 
 ### Корреспондентские счета
 
