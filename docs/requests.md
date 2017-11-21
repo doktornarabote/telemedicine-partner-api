@@ -60,7 +60,7 @@ id | string | уникальный идентификатор консульта
 
 ### Ответ
 
-[Медицинское заключение](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Medical-Report)
+[Медицинское заключение](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#medical-report)
 
 ```json
 {
@@ -83,7 +83,7 @@ requestId | string | ID запроса на консультацию
 
 ### Ответ
 
-[Вложение](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Media)
+[Вложение](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#media)
 
 ```json
 {

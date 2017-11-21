@@ -12,7 +12,7 @@ binary | string | multipart/form-data содержимое
 
 ### Ответ:
 
-[Медиа](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Media)
+[Медиа](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#media)
 
 ```json
 {
@@ -50,7 +50,7 @@ asc | boolean | сортировать по возрастанию по дате
 
 ### Ответ
 
-[Медиа](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Media)
+[Медиа](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#media)
 
 ```json
 {

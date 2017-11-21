@@ -29,7 +29,7 @@ offset | integer | смещение (сколько записей пропус�
 
 ### Ответ:
 
-[Врач](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Doctor)
+[Врач](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#doctor)
 
 ```json
 {
@@ -57,7 +57,7 @@ id | integer | уникальный идентификатор врача
 
 ### Ответ:
 
-[Врач](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Doctor)
+[Врач](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#doctor)
 
 ```json
 {

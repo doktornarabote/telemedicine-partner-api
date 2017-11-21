@@ -61,8 +61,8 @@ region | object | регион (справочник регионов)
 degree | object | учёная степень (справочник учёных степеней)
 position | object | должность (справочник должностей)
 specialties | array | специальности (справочник медицинских специальностей)
-consultationTypes | array<[ConsultationType](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Consultation-Type)> | доступные виды консультаций (объект вид консультации)
-summary | [DoctorStatistics](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Doctor-Statistics) | статистическая информация (объект статистика врача)
+consultationTypes | array<[ConsultationType](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#consultation-type)> | доступные виды консультаций (объект вид консультации)
+summary | [DoctorStatistics](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#doctor-Statistics) | статистическая информация (объект статистика врача)
 
 ```json
 {
@@ -357,7 +357,7 @@ calls | array<[Call](https://github.com/doktornarabote/telemedicine-partner-api/
 --- | --- | ---
 unreadCount | integer | кол-во непрочитанных сообщений
 totalCount | integer | кол-во всего сообщений
-message | [Message](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Message) | последнее сообщение
+message | [Message](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#message) | последнее сообщение
 
 ```json
 {
@@ -464,10 +464,10 @@ patronimycName | string | отчество
 bornOn | string | дата рождения
 weight | number | вес
 sex | object | пол
-photo | [Media](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Media) | фотография
+photo | [Media](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#media) | фотография
 avatarUrl | string | адрес фото профиля
-phone | [Phone](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Phone) | телефон пользователя
-balance | object | баланс пользователя, состоит из пары rub, bonus типа [Money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Money)
+phone | [Phone](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#phone) | телефон пользователя
+balance | object | баланс пользователя, состоит из пары rub, bonus типа [Money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money)
 createdAtUtc | datetime | дата создания профиля
 isDeleted | boolean | индикатор удаления профиля
 
@@ -516,8 +516,8 @@ medicalReports | array | массив заключений (объектов м�
 --- | --- | ---
 text | string | текст заключения
 createdAtUtc | datetime | дата создания
-consultation | [ConsultationDescription](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Consultation-Description) | краткое описание консультации
-attachments | array<[Media](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Media)> | дата начала
+consultation | [ConsultationDescription](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#consultation-description) | краткое описание консультации
+attachments | array<[Media](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#media)> | дата начала
 
 ```json
 {
@@ -574,14 +574,14 @@ amount | [Money](https://github.com/doktornarabote/telemedicine-partner-api/blob
 createdAtUtc | string | дата создания
 completedAtUtc | string | дата завершения
 correspondentAccountId | string | идентификатор корреспондентского счёта
-operation | [Operation](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Operation) | операция, в рамках которой проводилась транзакция
+operation | [Operation](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#operation) | операция, в рамках которой проводилась транзакция
 
 ## Operation
 
 Имя | Тип | Описание
 --- | --- | ---
 id | string | уникальный идентификатор
-type | [OperationType](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#OperationType) | тип операции
+type | [OperationType](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#operationtype) | тип операции
 description | string | описание
 createdAtUtc | string | дата создания
 completedAtUtc | string | дата завершения

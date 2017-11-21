@@ -10,7 +10,7 @@
 
 Имя | Тип | Описание
 --- | --- | ---
-operationTypes | array<[OperationType](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#OperationType)> | фильтр по типам операций
+operationTypes | array<[OperationType](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#operationtype)> | фильтр по типам операций
 currencies | array<[currency](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#currency)> | фильтр по валютам
 limit | integer | кол-во (записей в ответе)
 offset | integer | смещение (сколько записей пропустить)
