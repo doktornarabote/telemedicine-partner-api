@@ -16,6 +16,8 @@ beginAtUtc | datetime | (optional) время начала консультац�
 
 ### Ответ:
 
+[Текстовая консультация](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Текстовая-консультация)
+
 ```json
 {
   "item": {
@@ -35,6 +37,8 @@ beginAtUtc | datetime | (optional) время начала консультац�
 id | string | уникальный идентификатор консультации вида текстовая консультация
 
 ### Ответ
+
+[Текстовая консультация](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Текстовая-консультация)
 
 ```json
 {
@@ -60,6 +64,8 @@ limit | integer | максимальное кол-во записей в отв�
 offset | integer | смещение (сколько записей пропустить)
 
 ### Ответ
+
+[Текстовая консультация](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Текстовая-консультация)
 
 ```json
 {
@@ -104,6 +110,8 @@ reason | string | причина
 
 ### Ответ:
 
+[Текстовая консультация](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Текстовая-консультация)
+
 ```json
 {
   "item": {
@@ -124,6 +132,8 @@ requestId | integer | уникальный идентификаторы конс
 reason | string | причина
 
 ### Ответ:
+
+[Текстовая консультация](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Текстовая-консультация)
 
 ```json
 {
@@ -146,6 +156,8 @@ rate | float | оценка консультации; допустимые зн�
 comment | string | комментарий к оценке
 
 ### Ответ
+
+[Текстовая консультация](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Текстовая-консультация)
 
 ```json
 {

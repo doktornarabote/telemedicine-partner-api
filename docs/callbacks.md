@@ -16,9 +16,13 @@ beginAtUtc | datetime | (optional) время начала консультац�
 
 ### Ответ:
 
+[Обратный звонок](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Обратный-звонок)
+
 ```json
 {
-  //.. [callback](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#callback)
+  "item": {
+    //.. объект обратный звонок
+  }
 }
 ```
 
@@ -34,9 +38,13 @@ id | string | уникальный идентификатор консульта
 
 ### Ответ
 
+[Обратный звонок](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Обратный-звонок)
+
 ```json
 {
-  //.. [callback](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#callback)
+  "item": {
+    //.. объект обратный звонок
+  }
 }
 ```
 
@@ -57,11 +65,13 @@ offset | integer | смещение (сколько записей пропус�
 
 ### Ответ
 
+[Обратный звонок](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#Обратный-звонок)
+
 ```json
 {
   "items": [
     {
-      //.. [callback](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#callback)
+      //.. объект обратный звонок
     }
   ],
   "count": 10,
