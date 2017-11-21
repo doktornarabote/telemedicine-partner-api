@@ -9,17 +9,16 @@
 Имя | Тип | Описание
 --- | --- | ---
 doctorId | integer | уникальный идентификатор врача
-patientPhone | [phone](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md) | телефонный номер пациента (объект телефон).
+patientPhone | [phone](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#phone) | телефонный номер пациента.
 patientFullName | string | фио пациента
+cost | [money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | стоимость выбранной консультации. Необходимо для сверения последних данных о стоимости консультаций от врача со стоимостью, показанной пациенту.
 beginAtUtc | datetime | (optional) время начала консультации. Если параметр не указан, то консультация начнется сразу.
-duration | integer | (optional) максимальная длительность консультации в минутах.
-externalNotificationUrl | string | (optional) web-hook URL. По этому адресу будет отправлен GET-запрос без каких-либо дополнительных параметров, если был изменен статус консультации. Например, было добавлено заключение, и статус консультации был изменен на "Завершено".
 
 ### Ответ:
 
 ```json
 {
-  //.. объект обратный звонок
+  //.. [callback](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#callback)
 }
 ```
 
@@ -37,7 +36,7 @@ id | string | уникальный идентификатор консульта
 
 ```json
 {
-  //.. объект обратный звонок
+  //.. [callback](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#callback)
 }
 ```
 
@@ -62,11 +61,11 @@ offset | integer | смещение (сколько записей пропус�
 {
   "items": [
     {
-      //.. объект обратный звонок
+      //.. [callback](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#callback)
     }
   ],
   "count": 10,
-  "totalCount": 10
+  "totalCount": 15
 }
 ```
 

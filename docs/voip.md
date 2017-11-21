@@ -11,7 +11,7 @@
 doctorId | integer | уникальный идентификатор врача
 patientFullName | string | фио пациента
 videoSupport | boolean | поддержка видео во время консультации
-cost | [money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md) | стоимость выбранной консультации. Необходимо для сверения последних данных о стоимости консультаций от врача со стоимостью, показанной пациенту.
+cost | [money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | стоимость выбранной консультации. Необходимо для сверения последних данных о стоимости консультаций от врача со стоимостью, показанной пациенту.
 beginAtUtc | datetime | (optional) время начала консультации. Если параметр не указан, то консультация начнется сразу.
 
 ### Ответ:

@@ -2,7 +2,7 @@
 
 ## OperationType
 
-Возможные значения: `Deposit`, `Withdraw`, `EUR`, `Bonus`.
+Возможные значения: `Deposit`, `Withdraw`.
 
 Имя | Тип | Описание
 --- | --- | ---
@@ -37,7 +37,7 @@ name | string | название для отображения пользова�
 Имя | Тип | Описание
 --- | --- | ---
 amount | float | количество денег
-currency | [Currency](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md) | валюта
+currency | [currency](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#currency) | валюта
 
 ```json
 {
@@ -46,6 +46,20 @@ currency | [Currency](https://github.com/doktornarabote/telemedicine-partner-api
         "id": "RUB",
         "name": "руб."
     }
+}
+```
+
+## Phone
+
+Имя | Тип | Описание
+--- | --- | ---
+code | string | код страны
+number | string | номер телефона
+
+```json
+{
+    "code": "1",
+    "number": "1111111111"
 }
 ```
 
@@ -134,7 +148,7 @@ account | object | учётная запись (объект учётная за
 --- | --- | ---
 id | string | уникальный идентификатор
 type | object | тип консультации
-cost | object | стоимость (объект денежные средства)
+cost | [money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | стоимость (объект денежные средства)
 timeSchedules | array | график доступности (объект временной интервал)
 isAvailable | boolean | признак доступности консультации
 isDisabled | boolean | признак запрета на проведение консультации
@@ -203,15 +217,15 @@ isAllowed | boolean | допущен для проведения консуль�
 }
 ```
 
-## Обратный звонок
+## Callback (Обратный звонок)
 
 Имя | Тип | Описание
 --- | --- | ---
 id | string | уникальный идентификатор
-patientPhone | object | телефон, на который поступит звонок для консультации (объект телефон)
+patientPhone | [phone](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#phone) | телефон, на который поступит звонок для консультации
 doctorFullName | string | фио врача
 patientFullName | string | фио пациента
-costPerMinute | object | стоимость (объект денежные средства)
+costPerMinute | [money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | стоимость (объект денежные средства)
 calls | array | список осуществлённых звонков (объект телефонный звонок)
 status | object | статус
 createdAtUtc | string | дата создания
@@ -271,10 +285,10 @@ feedbacks | array | список отзывов (объет отзыв о кон
 Имя | Тип | Описание
 --- | --- | ---
 id | string | уникальный идентификатор
-costPerRequest | object | стоимость (объект денежные средства)
+costPerRequest | [money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | стоимость
 status | object | статус
 correspondence | object | информация о сообщениях (объект переписка)
-createdAtUtc | string | дата создания
+createdAtUtc | datetime | дата создания
 medicalReport | object | заключение врача (объект медицинское заключение)
 doctor | object | врач, с которым проводится консультация (объект врач)
 patient | object | информация о пациенте
@@ -510,7 +524,7 @@ createdAtUtc | string | дата создания
 
 Имя | Тип | Описание
 --- | --- | ---
-amount | object | сумма
+amount | [money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | сумма
 createdAtUtc | string | дата создания
 completedAtUtc | string | дата завершения
 correspondentAccountId | string | идентификатор корреспондентского счёта
@@ -580,7 +594,7 @@ correspondentAccounts | array | массив счетов (объект корр
 Имя | Тип | Описание
 --- | --- | ---
 id | string | уникальный идентификатор
-balance | object | баланс (объект денежные средства)
+balance | [money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | баланс
 
 ```json
 {
@@ -588,22 +602,6 @@ balance | object | баланс (объект денежные средства)
     "balance": {
         //..
     }    
-}
-```
-
-## Денежные средства
-
-Имя | Тип | Описание
---- | --- | ---
-amount | numeric | Сумма
-currency | object | валюта (объект валюта)
-
-```json
-{
-    "amount": 13850,
-    "currency": {
-        //..
-    }
 }
 ```
 
