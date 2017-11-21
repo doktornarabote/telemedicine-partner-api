@@ -80,7 +80,7 @@ keys | object | VAPID-ключи
 }
 ```
 
-## Врач
+## Doctor
 
 Имя | Тип | Описание
 --- | --- | ---
@@ -224,16 +224,16 @@ isAllowed | boolean | допущен для проведения консуль�
 id | string | уникальный идентификатор
 status | object | статус
 createdAtUtc | string | дата создания
-medicalReport | [medicalReport](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#медицинское-заключение) | заключение врача
-feedbacks | array<[feedback](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#отзыв-о-консультации)> | список отзывов
-statuses | array<[statusHistory](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#история-статуса)> | история статусов консультации
-doctor | [doctor](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#врач) | врач, с которым проводится консультация
-operations | array<[operation](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#операция)> | список проведённых операций
-timeline | array<[timelineEvent](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#событие-консультации)> | список возникавших событий
+medicalReport | [medicalReport](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#medical-report) | заключение врача
+feedbacks | array<[feedback](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#feedback)> | список отзывов
+statuses | array<[statusHistory](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#status-history)> | история статусов консультации
+doctor | [doctor](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#doctor) | врач, с которым проводится консультация
+operations | array<[operation](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#operation)> | список проведённых операций
+timeline | array<[timelineEvent](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#timeline-event)> | список возникавших событий
 patientPhone | [phone](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#phone) | телефон, на который поступит звонок для консультации
 patientFullName | string | фио пациента
 costPerMinute | [money](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#money) | стоимость
-calls | array<[call](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#телефонный-звонок)> | список осуществлённых звонков
+calls | array<[call](https://github.com/doktornarabote/telemedicine-partner-api/blob/master/docs/contracts.md#call)> | список осуществлённых звонков
 
 ```json
 {
@@ -459,7 +459,7 @@ image | object | информация об изображении
 }
 ```
 
-## Медицинское заключение
+## Medical Report
 
 Имя | Тип | Описание
 --- | --- | ---
@@ -533,7 +533,7 @@ number | string | номер
 }
 ```
 
-## Телефонный звонок
+## Call
 
 Имя | Тип | Описание
 --- | --- | ---
@@ -556,7 +556,7 @@ successful | boolean | признак успешно состоявшего зв
 }
 ```
 
-## История статуса
+## Status History
 
 Имя | Тип | Описание
 --- | --- | ---
@@ -575,7 +575,7 @@ completedAtUtc | string | дата завершения
 correspondentAccountId | string | идентификатор корреспондентского счёта
 operation | object | операция, в рамках которой проводилась транзакция
 
-## Операция
+## Operation
 
 Имя | Тип | Описание
 --- | --- | ---
@@ -585,7 +585,7 @@ description | string | описание
 createdAtUtc | string | дата создания
 completedAtUtc | string | дата завершения
 
-## Событие консультации
+## Timeline Event
 
 Имя | Тип | Описание
 --- | --- | ---
@@ -594,7 +594,7 @@ type | object | тип события
 createdAtUtc | string | дата возникновения
 data | object | специфичные событию данные
 
-## Отзыв о консультации
+## Feedback
 
 Имя | Тип | Описание
 --- | --- | ---
