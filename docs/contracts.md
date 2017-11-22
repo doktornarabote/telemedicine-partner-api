@@ -161,8 +161,8 @@ doctorName | string | имя доктора
 
 Имя | Тип | Описание
 --- | --- | ---
-beginAtUtc | string | дата начала
-endAtUtc | string | дата окончания
+beginAtUtc | datetime | дата начала
+endAtUtc | datetime | дата окончания
 
 ```json
 {
@@ -194,7 +194,7 @@ feedbackCount | integer | кол-во отзывов
 id | string | уникальный идентификатор
 type | object | тип консультации
 status | object | статус
-createdAtUtc | string | дата создания
+createdAtUtc | datetime | дата создания
 medicalReport | [MedicalReport](./contracts.md#medical-report) | заключение врача
 feedbacks | array<[Feedback](./contracts.md#feedback)> | список отзывов
 statuses | array<[StatusHistory](./contracts.md#status-history)> | история статусов консультации
@@ -241,7 +241,7 @@ timeline | array<[TimelineEvent](./contracts.md#timeline-event)> | список 
 --- | --- | ---
 id | string | уникальный идентификатор
 status | object | статус
-createdAtUtc | string | дата создания
+createdAtUtc | datetime | дата создания
 medicalReport | [MedicalReport](./contracts.md#medical-report) | заключение врача
 feedbacks | array<[Feedback](./contracts.md#feedback)> | список отзывов
 statuses | array<[StatusHistory](./contracts.md#status-history)> | история статусов консультации
@@ -298,7 +298,7 @@ calls | array<[Call](./contracts.md#call)> | список осуществлён
 --- | --- | ---
 id | string | уникальный идентификатор
 status | object | статус
-createdAtUtc | string | дата создания
+createdAtUtc | datetime | дата создания
 medicalReport | [MedicalReport](./contracts.md#medical-report) | заключение врача
 feedbacks | array<[Feedback](./contracts.md#feedback)> | список отзывов
 statuses | array<[StatusHistory](./contracts.md#status-history)> | история статусов консультации
@@ -349,7 +349,7 @@ correspondence | [Correspondence](./contracts.md#correspondence) | информ�
 --- | --- | ---
 id | string | уникальный идентификатор
 status | object | статус
-createdAtUtc | string | дата создания
+createdAtUtc | datetime | дата создания
 medicalReport | [MedicalReport](./contracts.md#medical-report) | заключение врача
 feedbacks | array<[Feedback](./contracts.md#feedback)> | список отзывов
 statuses | array<[StatusHistory](./contracts.md#status-history)> | история статусов консультации
@@ -435,8 +435,8 @@ requestId | string | идентификатор консультации
 sender | object | отправитель (участник)
 text | string | текстовое содержимое сообщения
 attachment | object | приложение (объект медиа)
-createdAtUtc | string | дата создания
-readAtUtc | string | дата прочтения адресатом
+createdAtUtc | datetime | дата создания
+readAtUtc | datetime | дата прочтения адресатом
 
 ```json
 {
@@ -482,10 +482,10 @@ image | object | информация об изображении
 
 Имя | Тип | Описание
 --- | --- | ---
-doctor | object | врач, который написал заключение (объект врач)
+doctor | [Doctor](./contracts.md#doctor) | врач, который написал заключение (объект врач)
 text | string | текстовое содержимое заключения (свободная форма)
-createdAtUtc | string | дата создания
-attachments | array | массив приложений (объектов медиа)
+createdAtUtc | datetime | дата создания
+attachments | array<[Media](./contracts.md#media)> | массив вложений
 
 ```json
 {
@@ -509,7 +509,7 @@ nickName | string | псевдоним
 firstName | string | имя
 lastName | string | фамилия
 patronimycName | string | отчество
-bornOn | string | дата рождения
+bornOn | datetime | дата рождения
 weight | number | вес
 sex | object | пол
 photo | [Media](./contracts.md#media) | фотография
@@ -551,13 +551,6 @@ isDeleted | boolean | индикатор удаления профиля
 }
 ```
 
-## Medical Card
-
-Имя | Тип | Описание
---- | --- | ---
-patient | object | информация о пациенте (объект пациент)
-medicalReports | array | массив заключений (объектов медицинское заключение)
-
 ## Medical Report
 
 Имя | Тип | Описание
@@ -589,7 +582,7 @@ attachments | array<[Media](./contracts.md#media)> | дата начала
 id | string | уникальный идентификатор
 actor | object | участник (владелец телефонного номера)
 duration | integer | продолжительность
-startedAtUtc | string | дата начала
+startedAtUtc | datetime | дата начала
 successful | boolean | признак успешно состоявшего звонка
 
 ```json
@@ -612,15 +605,15 @@ successful | boolean | признак успешно состоявшего зв
 id | string | уникальный идентификатор
 status | object | статус
 actor | object | участник (инициатор действия)
-createdAtUtc | string | дата создания
+createdAtUtc | datetime | дата создания
 
 ## Transaction
 
 Имя | Тип | Описание
 --- | --- | ---
 amount | [Money](./contracts.md#money) | сумма
-createdAtUtc | string | дата создания
-completedAtUtc | string | дата завершения
+createdAtUtc | datetime | дата создания
+completedAtUtc | datetime | дата завершения
 correspondentAccountId | string | идентификатор корреспондентского счёта
 operation | [Operation](./contracts.md#operation) | операция, в рамках которой проводилась транзакция
 
@@ -631,8 +624,8 @@ operation | [Operation](./contracts.md#operation) | операция, в рам�
 id | string | уникальный идентификатор
 type | [OperationType](./contracts.md#operationtype) | тип операции
 description | string | описание
-createdAtUtc | string | дата создания
-completedAtUtc | string | дата завершения
+createdAtUtc | datetime | дата создания
+completedAtUtc | datetime | дата завершения
 
 ## OperationType
 
@@ -656,7 +649,7 @@ name | string | название для отображения пользова�
 --- | --- | ---
 id | string | уникальный идентификатор
 type | object | тип события
-createdAtUtc | string | дата возникновения
+createdAtUtc | datetime | дата возникновения
 data | object | специфичные событию данные
 
 ## Feedback
@@ -665,7 +658,7 @@ data | object | специфичные событию данные
 --- | --- | ---
 rate | number | оценка
 comment | string | текстовый комментарий
-createdAtUtc | string | дата добавления
+createdAtUtc | datetime | дата добавления
 actor | object | участник (инициатор действия)
 
 ```json
