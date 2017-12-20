@@ -478,6 +478,7 @@ id | string | уникальный идентификатор
 url | string | url медиа
 name | string | наименование
 mime | string | mime-type
+mimeCategoryId | integer | ID [MIME-категории](./contracts.md#mime-type-category)
 size | integer | размер byte
 image | object | информация об изображении
 
