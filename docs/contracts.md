@@ -244,6 +244,7 @@ status | object | статус
 createdAtUtc | datetime | дата создания
 medicalReport | [MedicalReport](./contracts.md#medical-report) | заключение врача
 feedbacks | array<[Feedback](./contracts.md#feedback)> | список отзывов
+attachments | array<[Media](./contracts.md#media)> | список вложенных документов
 statuses | array<[StatusHistory](./contracts.md#status-history)> | история статусов консультации
 doctor | [Doctor](./contracts.md#doctor) | врач, с которым проводится консультация
 operations | array<[Operation](./contracts.md#operation)> | список проведённых операций
@@ -301,6 +302,7 @@ status | object | статус
 createdAtUtc | datetime | дата создания
 medicalReport | [MedicalReport](./contracts.md#medical-report) | заключение врача
 feedbacks | array<[Feedback](./contracts.md#feedback)> | список отзывов
+attachments | array<[Media](./contracts.md#media)> | список вложенных документов
 statuses | array<[StatusHistory](./contracts.md#status-history)> | история статусов консультации
 doctor | [Doctor](./contracts.md#doctor) | врач, с которым проводится консультация
 operations | array<[Operation](./contracts.md#operation)> | список проведённых операций
@@ -352,6 +354,7 @@ status | object | статус
 createdAtUtc | datetime | дата создания
 medicalReport | [MedicalReport](./contracts.md#medical-report) | заключение врача
 feedbacks | array<[Feedback](./contracts.md#feedback)> | список отзывов
+attachments | array<[Media](./contracts.md#media)> | список вложенных документов
 statuses | array<[StatusHistory](./contracts.md#status-history)> | история статусов консультации
 doctor | [Doctor](./contracts.md#doctor) | врач, с которым проводится консультация
 operations | array<[Operation](./contracts.md#operation)> | список проведённых операций
