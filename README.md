@@ -79,6 +79,7 @@ Telemedicine Partner API — это [API](https://ru.wikipedia.org/wiki/API) д�
 * [Отписка](./docs/pushnotifications.md#Отписка)
 * [Браузерные уведомления](./docs/pushnotifications.browser.md)
 * [Apple уведомления](./docs/pushnotifications.apple.md)
+* [Android уведомления](./docs/pushnotifications.android.md)
 
 ### Справочники
 
