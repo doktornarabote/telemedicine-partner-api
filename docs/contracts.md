@@ -61,7 +61,8 @@ region | object | регион (справочник регионов)
 degree | object | учёная степень (справочник учёных степеней)
 position | object | должность (справочник должностей)
 specialties | array | специальности (справочник медицинских специальностей)
-consultationTypes | array<[ConsultationType](./contracts.md#consultation-type)> | доступные виды консультаций (объект вид консультации)
+consultationTypes | array<[ConsultationType](./contracts.md#consultation-type)> | доступные виды консультаций
+flattenTimeSchedules | array<[FlattenTimeSchedule](./contracts.md#flatten-time-schedule)> | доступные виды консультаций в виде плоского списка временных интервалов и доступных типов консультаций
 summary | [DoctorStatistics](./contracts.md#doctor-statistics) | статистическая информация (объект статистика врача)
 
 ```json
@@ -95,6 +96,11 @@ summary | [DoctorStatistics](./contracts.md#doctor-statistics) | статист�
     }
   ],
   "consultationTypes": [
+    {
+      //..
+    }
+  ],
+  "flattenTimeSchedules": [
     {
       //..
     }
@@ -133,6 +139,54 @@ isDisabled | boolean | признак запрета на проведение �
     ],
     "isAvailable": true,
     "isDisabled": false
+}
+```
+
+## Flatten Time Schedule
+
+Имя | Тип | Описание
+--- | --- | ---
+interval | [TimeSchedule](./contracts.md#timeschedule) | график доступности
+consultationTypes | [FlattenConsultationType](./contracts.md#flatten-consultation-type) | типы консультаций, доступные в указанные временной интервал
+
+```json
+{
+    "id": "03e56f3d-1d43-4824-b9dd-cb29c0036973",
+    "type": {
+        "id": "Callback",
+        "name": "Обратный звонок"
+    },
+    "cost": {
+        //..
+    },
+    "timeSchedules": [
+        {
+            //..
+        }
+    ],
+    "isAvailable": true,
+    "isDisabled": false
+}
+```
+
+## Flatten Consultation Type
+
+Имя | Тип | Описание
+--- | --- | ---
+id | string | уникальный идентификатор типа консультации
+type | object | тип консультации
+cost | [Money](./contracts.md#money) | стоимость консультации
+
+```json
+{
+    "id": "03e56f3d-1d43-4824-b9dd-cb29c0036973",
+    "type": {
+        "id": "Callback",
+        "name": "Обратный звонок"
+    },
+    "cost": {
+        //..
+    }
 }
 ```
 
