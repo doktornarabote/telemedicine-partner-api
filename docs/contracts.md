@@ -151,21 +151,14 @@ consultationTypes | [FlattenConsultationType](./contracts.md#flatten-consultatio
 
 ```json
 {
-    "id": "03e56f3d-1d43-4824-b9dd-cb29c0036973",
-    "type": {
-        "id": "Callback",
-        "name": "Обратный звонок"
-    },
-    "cost": {
+    "interval": {
         //..
     },
-    "timeSchedules": [
+    "consultationTypes": [
         {
             //..
         }
-    ],
-    "isAvailable": true,
-    "isDisabled": false
+    ]
 }
 ```
 
