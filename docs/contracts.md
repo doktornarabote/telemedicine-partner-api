@@ -63,7 +63,7 @@ position | object | должность (справочник должносте�
 specialties | array | специальности (справочник медицинских специальностей)
 consultationTypes | array<[ConsultationType](./contracts.md#consultation-type)> | доступные виды консультаций
 flattenTimeSchedules | array<[FlattenTimeSchedule](./contracts.md#flatten-time-schedule)> | доступные виды консультаций в виде плоского списка временных интервалов и доступных типов консультаций
-summary | [DoctorStatistics](./contracts.md#doctor-statistics) | статистическая информация (объект статистика врача)
+summary | [DoctorSummary](./contracts.md#doctor-summary) | статистическая информация
 
 ```json
 {
@@ -218,19 +218,21 @@ endAtUtc | datetime | дата окончания
 }
 ```
 
-## Doctor Statistics
+## Doctor Summary
 
 Имя | Тип | Описание
 --- | --- | ---
 proRating | number | рейтинг
 consultationCount | integer | кол-во проведённых консультаций
 feedbackCount | integer | кол-во отзывов
+specialization | string | узкая специализация врача
 
 ```json
 {
     "proRating": 5,
     "consultationCount": 56,
-    "feedbackCount": 1
+    "feedbackCount": 1,
+    "specialization": "Я лучший врач в мире, консультируйтесь у меня. Да, имею диплом по ускоренному лечению ежей"
 }
 ```
 
